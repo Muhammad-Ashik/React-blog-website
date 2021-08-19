@@ -27,49 +27,6 @@ a {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.header-inner {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 22px 60px;
-}
-.site-header-bar {
-  background-color: #fff;
-}
-
-.site-header-bar ul.nav li {
-  list-style-type: none;
-}
-.header-inner .nav {
-  display: flex;
-}
-.navigation .nav {
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  padding: 10px;
-}
-.nav li a {
-  transition: 0.3s ease-in;
-  padding: 10px 8px;
-  color: #000;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-.nav a:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-.site-nav-logo {
-  height: 30px;
-  width: auto;
-}
-.site-nav-logo img {
-  max-width: 100%;
-  height: 100%;
-}
 .site-nav-right {
   justify-content: center;
   display: flex;
@@ -158,25 +115,6 @@ a {
   border: none !important;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
-}
-.top-post-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 20px;
-  text-align: left;
-  width: 40%;
-}
-
-.top-post-details h2 {
-  font-size: 1.8rem;
-}
-.top-post-details p {
-  font-size: 1.2rem;
-}
-.details-footer {
-  display: flex;
-  justify-content: space-between;
 }
 .card-post {
   text-align: left;
