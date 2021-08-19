@@ -1,0 +1,204 @@
+body {
+  color: #5c5a63;
+  font-family: Source Sans Pro, HelveticaNeue-Light, Helvetica Neue Light,
+    Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  background: #fff;
+  -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  width: 80px;
+}
+
+.nav-head {
+  position: fixed !important;
+  width: 100%;
+  z-index: 20;
+  /* height: 70px; */
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 22px 60px;
+}
+.site-header-bar {
+  background-color: #fff;
+}
+
+.site-header-bar ul.nav li {
+  list-style-type: none;
+}
+.header-inner .nav {
+  display: flex;
+}
+.navigation .nav {
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  padding: 10px;
+}
+.nav li a {
+  transition: 0.3s ease-in;
+  padding: 10px 8px;
+  color: #000;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.nav a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.site-nav-logo {
+  height: 30px;
+  width: auto;
+}
+.site-nav-logo img {
+  max-width: 100%;
+  height: 100%;
+}
+.site-nav-right {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-right .sign-in {
+  opacity: 0.6;
+  padding-right: 10px;
+  transition: 0.3s ease-in;
+  color: #000;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.site-nav-right .button {
+  padding: 0 10px;
+  min-width: 122px;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+.button-red {
+  font-size: 0.8rem;
+  background-color: #f63954;
+  border-color: #f63954;
+  color: #fff;
+}
+
+.site-nav-right a:hover {
+  opacity: 1;
+}
+.site-nav-right .button:hover {
+  transform: translateX(10px);
+  text-decoration: none;
+  color: #fff;
+}
+
+.black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-color: #181818;
+  color: #fff;
+}
+.black img {
+  max-height: 80px;
+}
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.top-post {
+  background-color: #fff;
+  box-shadow: 8px 14px 38px rgb(39 44 49 / 6%), 1px 3px 8px rgb(39 44 49 / 3%);
+  transition: all 0.5s ease;
+  margin: -100px 0 30px;
+}
+.top-post:hover {
+  box-shadow: 8px 28px 50px rgb(39 44 49 / 7%), 1px 6px 12px rgb(39 44 49 / 4%);
+  transition: all 0.4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.02);
+  cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  .top-post-image {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .top-post-image img {
+    width: 700px !important;
+  }
+}
+.top-post-image {
+  border: none !important;
+  background-color: transparent !important;
+}
+.top-post-image img {
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.top-post-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  text-align: left;
+  width: 40%;
+}
+
+.top-post-details h2 {
+  font-size: 1.8rem;
+}
+.top-post-details p {
+  font-size: 1.2rem;
+}
+.details-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card-post {
+  text-align: left;
+  box-shadow: 8px 14px 38px rgb(39 44 49 / 6%), 1px 3px 8px rgb(39 44 49 / 3%);
+  transition: all 0.5s ease;
+  border: none !important;
+}
+.card-post:hover {
+  box-shadow: 8px 28px 50px rgb(39 44 49 / 7%), 1px 6px 12px rgb(39 44 49 / 4%);
+  transition: all 0.4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.02);
+  cursor: pointer;
+}
+.card-post-inner {
+  margin-bottom: 50px;
+}
+footer {
+  background-color: #181818;
+}
+footer .footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
