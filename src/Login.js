@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Input from "./Input";
+import Button from "./Button";
 
 function Login() {
   return (
@@ -7,47 +9,27 @@ function Login() {
       <div className="login-head text-center">
         <h1 className="pb-5 login-title">LOG IN</h1>
         <h5 className="login-subtext font-weight-light mb-5">
-          <span className="text-danger">Join Marooned</span> if you don't have
-          an account yet
+          <span>
+            <Link className="text-danger" to="/signup">
+              Join Marooned
+            </Link>
+            {` if you don't have an account yet`}
+          </span>
         </h5>
       </div>
       <form className="text-left login">
-        <div className="form-group login-input">
-          <label className="login-input-label" for="email">
-            Email address
-            <span className="asterisk">*</span>
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div className="form-group login-input">
-          <label className="login-input-label" for="password">
-            Password
-            <span className="asterisk">*</span>
-          </label>
-          <input
-            type="password"
-            className="form-control"
-            id="password"
-            placeholder="Password"
-          />
-        </div>
+        <Input
+          text="Email address"
+          helperText="We'll never share your email with anyone else."
+        />
+        <Input text="Password" />
         <div className="forget-password">
           <Link to="/">
             <p className="text-danger">Forgot your password?</p>
           </Link>
         </div>
-        <button type="submit" className="login-button">
-          LOGIN
-        </button>
+        <Button text="LOGIN" />
+        <div className="mb-5"></div>
       </form>
     </>
   );

@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import { Route, Switch } from "react-router-dom";
 import Login from "./Login";
 import Header from "./Header";
+import SignUp from "./SignUp";
+import FullPost from "./FullPost";
 
 function Home() {
   return (
@@ -26,6 +28,8 @@ class App extends Component {
         <div className="pt-3">
           <Switch>
             <Route path="/login" component={Login} />
+            <Route path="/signup" component={SignUp} />
+            <Route path="/:name" component={FullPost} />
             <Route path="/" component={Home} />
           </Switch>
         </div>

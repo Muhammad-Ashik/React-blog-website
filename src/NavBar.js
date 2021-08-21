@@ -49,12 +49,21 @@ function NavBar() {
         className="collapse navbar-collapse site-nav-right"
         id="navbarSupportedContent"
       >
-        <Link to="/login" className="sign-in">
+        <Link
+          to="/login"
+          className={
+            url.pathname == "/login" || url.pathname == "/"
+              ? "sign-in"
+              : url.pathname == "/signup"
+              ? "button button-red"
+              : "sign-in"
+          }
+        >
           {url.pathname !== "/login" && "Sign in"}
         </Link>
-        <a href="" title="Join" className="button button-red">
-          Join Marooned
-        </a>
+        <Link to="/signup" className="button button-red">
+          {url.pathname !== "/signup" && "Join Marooned"}
+        </Link>
       </div>
     </nav>
   );
