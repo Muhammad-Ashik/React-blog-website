@@ -6,7 +6,7 @@ function TopPost() {
   return (
     <div className="container-xl">
       <div className="top-post disable-bootstrap-link">
-        <Link to="/brian">
+        <Link to="/post/brian">
           <div className="card top-post-image">
             <img
               className="card-img-top"

@@ -29,7 +29,7 @@ class App extends Component {
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/signup" component={SignUp} />
-            <Route path="/:name" component={FullPost} />
+            <Route path="/post/:name" component={FullPost} />
             <Route path="/" component={Home} />
           </Switch>
         </div>

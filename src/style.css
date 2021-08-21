@@ -219,10 +219,23 @@ footer .footer {
 .forget-password a:hover {
   color: #f63954 !important;
 }
+@media (min-width: 1280px) {
+  .inner {
+    padding: 0 40px;
+  }
+}
+.inner {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 1170px;
+  width: calc(100% - 100px);
+  padding: 0;
+}
 .post-full-title {
   color: #27262c;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 50px;
   font-size: 3rem;
 }
 .post-full-image {
@@ -231,4 +244,79 @@ footer .footer {
   background: #c5d2d9 50%;
   background-size: cover;
   border-radius: 5px;
+}
+.post-full-content {
+  position: relative;
+  margin: 0 auto;
+  /* padding: 63px 190px 40px; */
+  padding-top: 20px;
+  min-height: 230px;
+  font-family: Source Sans Pro, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 2rem;
+  line-height: 1.6em;
+  background: #fff;
+}
+.post-content ol,
+.post-content p,
+.post-content ul {
+  font-size: 23.2px;
+  line-height: 36.4px;
+  font-weight: 300;
+  text-align: left;
+}
+.post-full-content .kg-width-wide .kg-image {
+  max-width: 1040px;
+  width: 100%;
+}
+.kg-gallery-image img {
+  max-width: 1040px;
+  height: 100%;
+  width: 100%;
+}
+.post-full-content figcaption {
+  margin: 1em 0 0;
+  font-size: 50%;
+  line-height: 1.6em;
+  letter-spacing: 2px;
+}
+.post-full-content figure {
+  margin: 1.5em 0 3em;
+}
+.author-card,
+.post-full-footer {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+.author-card .author-profile-image,
+.author-card .avatar-wrapper {
+  position: relative;
+  margin-right: 28px;
+}
+
+.author-card .author-profile-image,
+.author-card .avatar-wrapper {
+  margin-right: 25px;
+  width: 60px;
+  height: 60px;
+}
+.author-profile-image,
+.avatar-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e3e9ed;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.author-card-name h4 {
+  margin: 8px 0 2px;
+  padding: 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.author-card-name a {
+  color: #34323b;
 }
