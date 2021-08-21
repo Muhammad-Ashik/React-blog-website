@@ -5,9 +5,11 @@ function Footer() {
   return (
     <footer>
       <div className="container-fluid footer">
-        <div className="text-white text-center">
-          © {year} Muhammad Ashikuzzaman
-        </div>
+        <p className="card-text">
+          <small className="text-muted">
+            {year} © All rights reserved. Muhammad Ashikuzzaman.
+          </small>
+        </p>
       </div>
     </footer>
   );

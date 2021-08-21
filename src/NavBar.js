@@ -3,7 +3,7 @@ import React from "react";
 function NavBar() {
   return (
     <div>
-      <nav className="navbar nav-head navbar-expand-lg navbar-light">
+      <nav className="navbar nav-head navbar-expand-md navbar-light">
         <div className="navbar-brand w-25" href="#">
           <a href="#">
             <img className="logo" src="./black-logo.png" alt="logo" />

@@ -18,7 +18,7 @@ function PostCard() {
               Yes, there's a functional side to React. Here's how you can pass a
               function to setState() and why that's useful.
             </p>
-            <p className="card-text d-flex justify-content-between">
+            <p className="card-text d-flex justify-content-between flex-column">
               <small className="text-muted">Muhammad</small>
               <small className="text-muted">Last updated 3 mins ago</small>
             </p>

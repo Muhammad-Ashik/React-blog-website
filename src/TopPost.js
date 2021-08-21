@@ -24,7 +24,7 @@ function TopPost() {
               developer life in Seoul. In this interview, we discuss life in
               South Korea.
             </p>
-            <p className="card-text d-flex justify-content-between">
+            <p className="card-text d-flex justify-content-between flex-column">
               <small className="text-muted">Eric hansen</small>
               <small className="text-muted">Last updated 3 mins ago</small>
             </p>
